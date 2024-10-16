@@ -1,7 +1,5 @@
 # Omniauth::Gohighlevel
 
-TODO: Delete this and the text below, and describe your gem
-
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/omniauth/gohighlevel`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 ## Installation
@@ -24,11 +22,13 @@ Or install it yourself as:
 
 Here's a quick example, adding the middleware to a Rails app in config/initializers/omniauth.rb:
 
+```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :gohighlevel, ENV['GOHIGHLEVEL_CLIENT_ID'], ENV['GOHIGHLEVEL_CLIENT_SECRET'], {
     scope: "contacts.write contacts.readonly invoices.readonly invoices.write products.readonly locations.readonly"
   }
 end
+```
 
 ## Development
 
